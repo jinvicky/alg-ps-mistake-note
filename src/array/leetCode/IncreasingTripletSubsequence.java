@@ -1,4 +1,4 @@
-package array;
+package array.leetCode;
 
 /**
  * LeetCode 334. Increasing Triplet Subsequence
