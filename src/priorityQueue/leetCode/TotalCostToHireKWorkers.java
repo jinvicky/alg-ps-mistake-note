@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
- * LeetCode 857. Minimum Cost to Hire K Workers
+ * LeetCode 2462. Total Cost to Hire K Workers
  * <p>
  * [회고]
  * 우선순위 큐를 활용하는 문제인데 너무 어려워서 며칠 헤매다 포기.
