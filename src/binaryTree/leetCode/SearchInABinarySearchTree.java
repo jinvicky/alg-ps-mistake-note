@@ -30,18 +30,3 @@ public class SearchInABinarySearchTree {
         System.out.println(searchInABinarySearchTree.searchBST(root, 2));
     }
 }
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode() {}
-    TreeNode(int val) {
-        this.val = val;
-    }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}

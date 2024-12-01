@@ -57,57 +57,9 @@ public class LeafSimilarTrees {
 
     public static void main(String[] args) {
         LeafSimilarTrees leafSimilarTrees = new LeafSimilarTrees();
-        TreeNode root1 = leafSimilarTrees.new TreeNode(3);
-        root1.left = leafSimilarTrees.new TreeNode(5);
-        root1.right = leafSimilarTrees.new TreeNode(1);
-        root1.left.left = leafSimilarTrees.new TreeNode(6);
-        root1.left.right = leafSimilarTrees.new TreeNode(2);
-        root1.right.left = leafSimilarTrees.new TreeNode(9);
-        root1.right.right = leafSimilarTrees.new TreeNode(8);
-        root1.left.right.left = leafSimilarTrees.new TreeNode(7);
-        root1.left.right.right = leafSimilarTrees.new TreeNode(4);
-
-        TreeNode root2 = leafSimilarTrees.new TreeNode(3);
-        root2.left = leafSimilarTrees.new TreeNode(5);
-        root2.right = leafSimilarTrees.new TreeNode(1);
-        root2.left.left = leafSimilarTrees.new TreeNode(6);
-        root2.left.right = leafSimilarTrees.new TreeNode(7);
-        root2.right.left = leafSimilarTrees.new TreeNode(4);
-        root2.right.right = leafSimilarTrees.new TreeNode(2);
-        root2.right.right.left = leafSimilarTrees.new TreeNode(9);
-        root2.right.right.right = leafSimilarTrees.new TreeNode(8);
-
+        TreeNode root1 = new TreeNode(3, new TreeNode(5, new TreeNode(6), new TreeNode(2, new TreeNode(7), new TreeNode(4))), new TreeNode(1, new TreeNode(9), new TreeNode(8)));
+        TreeNode root2 = new TreeNode(3, new TreeNode(5, new TreeNode(6), new TreeNode(7)), new TreeNode(1, new TreeNode(4), new TreeNode(2, new TreeNode(9), new TreeNode(8))));
         System.out.println(leafSimilarTrees.leafSimilar(root1, root2));
-//
-//        LeafSimilarTrees leafSimilarTrees = new LeafSimilarTrees();
-//
-//        TreeNode root1 = leafSimilarTrees.new TreeNode(1);
-//        root1.left = leafSimilarTrees.new TreeNode(2);
-//        root1.right = leafSimilarTrees.new TreeNode(3);
-//
-//        TreeNode root2 = leafSimilarTrees.new TreeNode(1);
-//        root2.left = leafSimilarTrees.new TreeNode(3);
-//        root2.right = leafSimilarTrees.new TreeNode(2);
-//
-//        System.out.println(leafSimilarTrees.leafSimilar(root1, root2));
     }
 
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 }
